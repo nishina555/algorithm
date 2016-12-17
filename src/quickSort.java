@@ -3,7 +3,7 @@ import java.util.Random;
 /**
  * Created by nishina on 2016/12/15.
  */
-public class quickSort {
+public class QuickSort {
     public static void quickSort(int[] array, int left, int right) {
         //pivotより左に小さい値を渡し、右に大きい値を渡す作業をする
         //左右からpivotに向かって振り分けが迫ってくるイメージ
