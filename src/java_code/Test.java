@@ -1,4 +1,4 @@
-package java;
+package java_code;
 public class Test {
     public static void main(String args[]) {
         String[] array = new String[3];
