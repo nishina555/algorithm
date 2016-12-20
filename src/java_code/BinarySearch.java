@@ -11,7 +11,7 @@ public class BinarySearch {
         Scanner scan = new Scanner(System.in);
         int searchKey = scan.nextInt();
         if (searchKey > 10 || searchKey < 1) {
-            System.out.println("1から11の間で入力してください");
+            System.out.println("1から10の間で入力してください");
             System.exit(0);
         }
         System.out.println("バイナリーサーチ開始");
