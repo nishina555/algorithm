@@ -30,7 +30,7 @@ else
   puts searchNum
 end
 
-puts "バイナリーサーチ開始"
+puts "バイナリーサーチを開始します"
 
 position = binarySearch(searchNum, data)
 if position == -1 then
@@ -38,3 +38,5 @@ if position == -1 then
 else
   puts "#{searchNum}は#{position}番目にあります"
 end
+
+puts "バイナリーサーチを終了します"
