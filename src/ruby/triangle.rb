@@ -9,16 +9,12 @@ if ARGV.include?('0')
 end
 
 sides = ARGV.map(&:to_i).sort
-if sides[0] + sides[1] > sides[2]
-  if sides[0] == sides[1] || sides[1] == sides[2] || sides[2] == sides[0]
-    if sides[0] == sides[1] && sides[1] == sides[2]
-      puts '正三角形ですね！'
-      exit
-    end
-    puts '二等辺三角形ですね！'
-    exit
-  end
-  puts '不等辺三角形ですね！'
-else
+if sides[0] + sides[1] < sides[2]
   puts '三角形じゃないです＞＜'
+elsif sides.all? { |side| side == sides[0] }
+  puts '二等辺三角形ですね！'
+elsif sides[0] == sides[1] && sides[1] == sides[2]
+  puts '正三角形ですね！'
+else
+  puts '不等辺三角形ですね！'
 end
