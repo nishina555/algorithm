@@ -1,9 +1,9 @@
 # Eratosthenes
 class Eratosthenes
-  @@lowest_prime = 2
+  @lowest_prime = 2
   def self.primes(input)
     primes = []
-    candidates = (@@lowest_prime..input).to_a
+    candidates = (@lowest_prime..input).to_a
     while candidates.first <= Math.sqrt(input)
       prime = candidates.first
       primes.push(prime)
