@@ -1,0 +1,39 @@
+def scalene_triangle_checker(arg)
+  if arg[0] + arg[1] > arg[2]
+    true
+  else
+    false
+  end
+end
+
+def isosceles_triangle_checker(arg)
+  if arg[0] == arg[1] || arg[1] == arg[2] || arg[2] == arg[0]
+    true
+  else
+    false
+  end
+end
+
+def equilateral_triangle_checker(arg)
+  if arg[0] == arg[1] && arg[1] == arg[2]
+    true
+  else
+    false
+  end
+end
+
+def triangle_checker(arg)
+  if scalene_triangle_checker(arg)
+    if isosceles_triangle_checker(arg)
+      if equilateral_triangle_checker(arg)
+        puts '正三角形ですね！'
+        exit
+      end
+      puts '二等辺三角形ですね！'
+      exit
+    end
+    puts '不等辺三角形ですね！'
+  else
+    puts '三角形じゃないです＞＜'
+  end
+end
